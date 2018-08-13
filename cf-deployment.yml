@@ -1107,6 +1107,12 @@ instance_groups:
       containers:
         trusted_ca_certificates:
           - ((application_ca.certificate))
+          - ((ca_1.certificate))
+          - ((ca_2.certificate))
+          - ((ca_3.certificate))
+          - ((ca_4.certificate))
+          - ((ca_5.certificate))
+          - ((ca_6.certificate))
       enable_declarative_healthcheck: true
       loggregator: *diego_loggregator_client_properties
       tls:
